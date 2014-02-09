@@ -32,6 +32,16 @@ gem 'font-awesome-sass', '~> 4.0.2'
 gem 'devise', '~> 3.2.2'
 
 
+# Better Errors
+gem 'better_errors'
+gem 'binding_of_caller'
+
+group :development do
+	gem 'annotate' # Annotate (generates schema on top of models)
+end
+
+
+
 # Bootstrap 3
 group :development, :test do
   gem 'rails_layout', '~> 0.5.11'  # Bootstrap 3 layout generator
@@ -43,9 +53,14 @@ gem 'bootstrap-sass', '~> 3.0.3.0'
 # RSpec
 group :test, :development do
   gem "rspec-rails", '~> 2.14.1'
+  gem "factory_girl_rails", "~> 4.3.0"
+
 end
 
 # Capybara
 group :test do
   gem "capybara", '~> 2.2.1'
+  gem "selenium-webdriver", "~> 2.39.0"
+  gem "database_cleaner", "~> 1.2.0"
+  gem "launchy", "~> 2.3.0"
 end
