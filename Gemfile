@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.0'
+# ruby '2.0.0'
 gem 'rails', '4.0.2'
 gem 'sass-rails', '~> 4.0.1'
 gem 'uglifier', '~> 2.4.0'
@@ -11,7 +11,7 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 
 
 # Active Admin
-gem 'activeadmin', github: 'gregbell/active_admin'
+# gem 'activeadmin', github: 'gregbell/active_admin'
 
 group :doc do
   gem 'sdoc', require: false
